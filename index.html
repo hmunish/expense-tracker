@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Expense tracker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  
+    <style>
+        button{
+            float: right;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+  <body>
+    
+    <!-- Main section -->
+    <main class="container">
+        <div class="row">
+            <form class="col-6 m-auto p-5" id="add-form">
+                <label class="form-label" for="expName">Expense Name</label>
+                <input class="form-control" type="text" name="expName" id="exp-name">
+                <label class="form-label" for="expName">Expense Amount</label>
+                <input class="form-control" type="text" name="expAmt" id="exp-amt">
+                <label for="exp-cat" class="form-label">Select Category of Expense</label>
+                <select class="form-select" name="expCat" id="exp-cat">
+                    <option selected>Please Select Category</option>
+                    <option value="Direct">Direct</option>
+                    <option value="In Direct">Indirect</option>
+                </select>
+                <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+
+            <ul class="list-group">
+                <li class="list-group-item">An item <button type="submit" class="btn btn-primary">Edit</button> <button type="submit" class="btn btn-danger">Delete</button> </li>
+              </ul>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
